@@ -25,18 +25,20 @@
         android:id="@+id/spnCategorias"
         android:layout_width="315dp"
         android:layout_height="34dp"
-        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/rvLista"
         app:layout_constraintEnd_toEndOf="@+id/txtTitulo"
         app:layout_constraintStart_toStartOf="@+id/txtTitulo"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvLista"
         android:layout_width="355dp"
         android:layout_height="580dp"
-        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/spnCategorias"
-        app:layout_constraintStart_toStartOf="@id/spnCategorias" />
+        app:layout_constraintStart_toStartOf="@id/spnCategorias"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
