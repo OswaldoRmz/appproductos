@@ -31,7 +31,7 @@ class ProductosAdaptador(private val activity: MainActivity, private var listaPr
         holder.tvNombre.text = producto.nombre
         holder.tvPrecio.text = "$ "+producto.precio.toString()
 
-        val baseUrl = "http://10.115.233.118/tienda_api/" //aqui va el url de tu conexion
+        val baseUrl = "http://192.168.1.78/tienda_api/" //aqui va el url de tu conexion
         val urlImagenCompleta = baseUrl + producto.urlimagenprincipal
 
         Glide.with(holder.itemView.context)

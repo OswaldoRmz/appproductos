@@ -28,7 +28,7 @@ class GaleriaAdaptador(private var listaImagenes: List<dataImagenesProducto>): R
 
     override fun onBindViewHolder(holder: GaleriaViewHolder, position: Int) {
         val imagen = listaImagenes[position]
-        val baseUrl = "http://10.115.233.118/tienda_api/" //aqui va el url de tu conexion
+        val baseUrl = "http://192.168.1.78/tienda_api/" //aqui va el url de tu conexion
         val urlCompleta = baseUrl + imagen.urlImagen
 
         Glide.with(holder.itemView.context)

@@ -9,7 +9,7 @@ import kotlin.lazy
 
 
 object RetrofitCliente {
-    private const val BASE_URL = "http://10.115.233.118/tienda_api/" //aqui va la url del api
+    private const val BASE_URL = "http://192.168.1.78/tienda_api/" //aqui va la url del api
 
     private val jsonConfig= Json{
         ignoreUnknownKeys=true
